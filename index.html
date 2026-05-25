@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="南宁张老师 - 免费学习资料、南宁学校信息分享" />
+    <title>南宁张老师 - 免费领资料分享</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- 顶部品牌区 -->
+      <header class="header">
+        <div class="brand">
+          <img src="/laozhang-icon.png" alt="南宁张老师" class="brand-icon-img" />
+          <span class="brand-name">南宁张老师</span>
+        </div>
+      </header>
+
+      <!-- 主内容 -->
+      <main class="main-content">
+        <!-- 左中 + 右侧 双栏布局 -->
+        <div class="content-row">
+          <!-- 左栏：主标语 -->
+          <div class="left-col">
+            <h1 class="slogan">
+              免费学习资料分享
+            </h1>
+          </div>
+
+          <!-- 右栏：三个标签 -->
+          <div class="right-col">
+            <div class="tag-card tag-1">
+              <img class="tag-icon-img" src="/icon-daily.jpg" alt="每日一练">
+              <span class="tag-text">每日一练</span>
+            </div>
+            <div class="tag-card tag-2">
+              <img class="tag-icon-img" src="/icon-exam.jpg" alt="各校真题">
+              <span class="tag-text">各校真题</span>
+            </div>
+            <div class="tag-card tag-3">
+              <img class="tag-icon-img" src="/icon-analysis.jpg" alt="试卷解析">
+              <span class="tag-text">试卷解析</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA 区域 -->
+        <div class="cta-section">
+          <p class="cta-text">点击下方按钮<br />添加张老师</p>
+          <button id="ctaBtn" class="cta-btn">领资料</button>
+        </div>
+
+        <!-- 下拉二维码区域 -->
+        <div id="qrDropdown" class="qr-dropdown">
+          <div class="qr-dropdown-inner">
+            <img src="/wechat-qr.png" alt="张老师微信二维码" class="dropdown-qr-img" />
+            <p class="qr-tip">长按识别二维码</p>
+          </div>
+        </div>
+
+        
+      </main>
+    </div>
+
+    <script>
+      // 下拉切换交互
+      var ctaBtn = document.getElementById('ctaBtn');
+      var qrDropdown = document.getElementById('qrDropdown');
+
+      ctaBtn.addEventListener('click', function () {
+        qrDropdown.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
